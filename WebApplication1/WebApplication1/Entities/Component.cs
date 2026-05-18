@@ -8,7 +8,8 @@ public class Component
 {
     [Key]
     [MaxLength(10)]
-    public string Cide { get; set; }
+    [Column(TypeName = "char(10)")]
+    public string Code { get; set; }
     [MaxLength(300)]
     public string Name { get; set; }
     public string Description { get; set; }
